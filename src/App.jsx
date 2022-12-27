@@ -1,14 +1,16 @@
-import './App.css'
-import Parrafo from './Components/Parrafo'
-import ContextoEjemploProvider from './Contexts/ContextoEjemploProvider'
+import '../src/Stylesheets/Style.css'
+import { CardsContainer } from './Components/CardsContainer'
+import { ProductsContextProvider } from './Contexts/ProductsContextProvider'
+import { Cart } from './Components/Cart'
 
 function App() {
   return (
-    <ContextoEjemploProvider>
+    <ProductsContextProvider>
       <div className="App">
-        <Parrafo />
+        <CardsContainer />
+        <Cart />
       </div>
-    </ContextoEjemploProvider>
+    </ProductsContextProvider>
   )
 }
 
